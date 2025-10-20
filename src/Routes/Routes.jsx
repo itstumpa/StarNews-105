@@ -1,9 +1,7 @@
 import { createBrowserRouter } from "react-router";
-// import Login from "../Pages/Login/Login.jsx";
-// import Home from "../Pages/Home/Home";
-// import Error from "../Pages/Error";
 import MainLayouts from "../components/Layout/MainLayouts";
-// import Register from "../Pages/Register/Register.jsx";
+import Home from "../components/pages/Home";
+import CategoryNews from "../components/pages/CategoryNews";
 
 
 const router = createBrowserRouter([
@@ -14,7 +12,12 @@ const router = createBrowserRouter([
     children: [
       {
     index: true, 
-    // element: <Home/>,
+    element: <Home/>,
+  },
+  {
+    path: "/category/:id",
+    element: <CategoryNews />,
+    loader: () => fetch("/news.json"),
   },
   // {
   //   path: "/login",

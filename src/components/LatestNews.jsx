@@ -11,6 +11,7 @@ const LatestNews = () => {
                   <p>Kristen Bell shared that her pre-teen daughters told her latest red-carpet outfit was “too sexy.”</p>
                   <p>The star-loaded Academy Museum Gala 2025 unfolded in high-fashion glamour with celebrity looks making headlines.</p>
                   </Marquee>
+                  
             </div>
       );
 };
